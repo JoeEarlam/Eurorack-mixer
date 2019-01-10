@@ -136,7 +136,7 @@ F 1 "10KA" H 1630 955 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 1000 50  0001 C CNN
 F 3 "~" H 1700 1000 50  0001 C CNN
 	1    1700 1000
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0104
@@ -177,7 +177,7 @@ F 1 "10KA" H 1630 1755 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 1800 50  0001 C CNN
 F 3 "~" H 1700 1800 50  0001 C CNN
 	1    1700 1800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0105
@@ -207,7 +207,7 @@ F 1 "10KA" H 1630 2505 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 2550 50  0001 C CNN
 F 3 "~" H 1700 2550 50  0001 C CNN
 	1    1700 2550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0106
@@ -237,7 +237,7 @@ F 1 "10KA" H 1630 3255 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 3300 50  0001 C CNN
 F 3 "~" H 1700 3300 50  0001 C CNN
 	1    1700 3300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0107
@@ -267,7 +267,7 @@ F 1 "10KA" H 1630 4005 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 4050 50  0001 C CNN
 F 3 "~" H 1700 4050 50  0001 C CNN
 	1    1700 4050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0108
@@ -297,7 +297,7 @@ F 1 "10KA" H 1630 4755 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 4800 50  0001 C CNN
 F 3 "~" H 1700 4800 50  0001 C CNN
 	1    1700 4800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0109
@@ -327,7 +327,7 @@ F 1 "10KA" H 1630 5455 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 5500 50  0001 C CNN
 F 3 "~" H 1700 5500 50  0001 C CNN
 	1    1700 5500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0110
@@ -357,7 +357,7 @@ F 1 "10KA" H 1630 6205 50  0000 R CNN
 F 2 "bourns:BOURNS-PTA4543_45mm-slide-pot" H 1700 6250 50  0001 C CNN
 F 3 "~" H 1700 6250 50  0001 C CNN
 	1    1700 6250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0111
@@ -1097,19 +1097,6 @@ Wire Wire Line
 	1200 1550 1400 1550
 Wire Wire Line
 	1200 700  1400 700 
-$Comp
-L Device:C_Small C12
-U 1 1 5B5B65D1
-P 5750 1000
-F 0 "C12" V 5850 950 50  0000 L CNN
-F 1 "10u" V 5650 900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5750 1000 50  0001 C CNN
-F 3 "~" H 5750 1000 50  0001 C CNN
-	1    5750 1000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5650 1000 5600 1000
 Connection ~ 5600 1000
 $Comp
 L Connector:Conn_01x03_Female J12
@@ -1273,19 +1260,6 @@ Wire Wire Line
 Connection ~ 7350 1600
 Wire Wire Line
 	7700 900  7700 1250
-$Comp
-L Device:R_Small R13
-U 1 1 5B5F4AE7
-P 6000 1150
-F 0 "R13" H 5950 1150 50  0000 R CNN
-F 1 "10K" H 5950 1250 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6000 1150 50  0001 C CNN
-F 3 "~" H 6000 1150 50  0001 C CNN
-	1    6000 1150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5850 1000 6000 1000
 Wire Wire Line
 	6000 1350 6000 1300
 Wire Wire Line
@@ -1294,14 +1268,21 @@ Wire Wire Line
 	6100 1100 6100 1300
 Wire Wire Line
 	6100 1300 6000 1300
-Connection ~ 6000 1300
-Wire Wire Line
-	6000 1300 6000 1250
-Wire Wire Line
-	6000 1050 6000 1000
-Connection ~ 6000 1000
-Wire Wire Line
-	6000 1000 6150 1000
 Wire Wire Line
 	7700 1600 8050 1600
+Wire Wire Line
+	5850 1000 6150 1000
+Wire Wire Line
+	5650 1000 5600 1000
+$Comp
+L Device:R_Small R13
+U 1 1 5C3BA133
+P 5750 1000
+F 0 "R13" H 5692 954 50  0000 R CNN
+F 1 "120R" H 5692 1045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5750 1000 50  0001 C CNN
+F 3 "~" H 5750 1000 50  0001 C CNN
+	1    5750 1000
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
